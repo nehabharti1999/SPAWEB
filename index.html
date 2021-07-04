@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About company</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="index">
+        <header>
+            <ul id="navitem">
+                <li class="item"><a href="#index">Home</a></li>
+                <li class="item"><a href="#aboutcompany">About Company</a></li>
+                <li class="item"><a href="#branch">Branches</a></li>
+                <li class="item"><a href="#form">Job Section</a></li>
+                <li class="item"><a href="#ceo">CEO Talk</a></li>
+                <li class="item"><a href="#contact">Contact Us</a></li>
+            </ul>
+        </header>
+
+        <div>
+            <h1><b><i>Welcome to Mountain Peak</i></b> </h1>
+            <h2 id="id1"><i>Inventing better future</i><br>Get in the fun.Get in contact with tomorrow</h2>
+        </div>
+    </section>
+    <section id="aboutcompany" style="background:rgb(228, 228, 212)">
+        <h2 id="id3"><b>What makes us who we are today…</b></h2>
+        <p>
+
+            At Mountain Peak, we develop innovative and creative products and services that provide total communication
+            and information solutions.
+            Among a plethora of services, web design and development, tailor made applications, ERPs, CRMs, e-commerce
+            solutions,
+            business-to-business applications, business-to-client applications, managed hosting and internet portal
+            management are few that we offer.
+            Satisfied clients around the globe bear testimony to the quality of our work.<br>
+
+            As a leader in technology exploring, Mountain Peak is committed to exporting quality software worldwide.
+            The general purpose of Softimpact is to develop and promote advanced information technologies for multi-user
+            operation.<br>
+
+            Mountain Peak's business philosophy is to assure the highest quality product, total client satisfaction,
+            timely delivery of solutions and
+            the best quality/price ratio found in the industry.<br>
+
+            Our emphasis is on offering a high degree of product user friendliness through a positive, creative and
+            focused company staff.</p><br><br>
+    </section>
+    <section id="branch" style="background: rgb(224, 187, 160)">
+        <ul id="list1">
+            <li>Odisha</li>
+            <li>Pune</li>
+            <li>Bangaluru</li>
+            <li>Hydrabad</li>
+            <li>Chennai</li>
+            <li>Delhi</li>
+        </ul>
+    </section>
+    <section id="form">
+        <h2 style="text-align: center">Apply for job</h2>
+        <!--forms--> 
+    <form onsubmit="fun()" method = "POST">
+        <div>
+            <label>First Name</label><br>
+            <input type ="text" id="firstName" pattern="[A-Za-z]{2,}" required placeholder="enter first name">
+        </div>
+        <br>
+        <div>
+            <label>Last Name</label><br>
+            <input type ="text" id="lasttName" required pattern="[A-Za-z]{2,}" placeholder="enter last name">
+        </div>
+        <br>
+        <div>
+            <label>Email id </label><br>
+            <input type ="email" id="email" required pattern="^[a-zA-z]{2,}[a-zA-z0-9])*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix" placeholder="neha@gmail.com">
+        </div>
+        <br>
+        <div>
+            <label>Birthday </label><br>
+            <input type ="date" id="birthday" required>
+        </div>
+        <br>
+        <div>
+            <label>Age </label><br>
+            <input type ="number" id="age" required pattern="[1-9][0-9]" value = "22">
+        </div>
+        <br>
+        <div>
+            <label>Gender </label><br>
+            <select id="gender">
+                <option value ="male">Male</option>
+                <option value ="female">Female</option>
+                <option value ="other">other</option>
+            </select>
+        </div>
+        <br>
+        <input type="submit" name="submit" value="SUBMIT">
+        <!-- <button onclick="fun()">SUBMIT</button> -->
+    </form>
+    <script>
+        function fun()
+        {
+            alert("Thankyou!.Submitted your data sucessfully.We will respond you soon.");
+        }
+    </script>
+    </section>
+    <section id="ceo" style="background: burlywood">
+        <h1>Debashis Chatterjee</h1><br>
+    <h3 style="text-align: left">Chief Executive Officer and Managing Director</h3><br>
+    <p>
+        
+        Debashis Chatterjee (DC) is the CEO and Managing Director of Mindtree. He has over 30 years of experience in the field of IT, 
+        spanning customer relationship management, building and managing large business units, strategic alliances, M & A, change
+         management and delivery management across multiple industries, business domains, technologies & geographies.<br>
+        
+        In his earlier role, as President, Global Delivery and Digital Systems and Technology at Cognizant, DC was responsible for 
+        delivery of technology services across all industry segments. Additionally, he drove technology excellence as well as global 
+        client organizations. As a member of the Executive Leadership Team, he participated in charting the strategic direction of the company.
+         He helped in laying the foundation of Cognizant’s Banking & Financial Services business and grew it to be the largest business <br>
+         within Cognizant.
+        
+        DC has earlier worked at IBM, TCS and Mahindra & Mahindra. He holds a bachelor's degree in Mechanical Engineering from Jadavpur University.
+         DC has served as a member of the Executive Council of NASSCOM. He is an Advisory Board Member of the PGPM program at SP Jain Institute and 
+          of Studies, MBA Program at NMIMS School of Business Management. He has been a guest speaker at conferences organized by NASSCOM and CII. 
+          He has been invited as a guest speaker at various institutes such as MIT Sloan School of Management, IIMA, ISB, Jadavpur University,<br> 
+          VIT and others.
+        
+        </p>
+
+    </section>
+    <section id="contact" style="background:rgb(228, 228, 212)">
+        <h2 id="id2"><b>Select a way to contact us</b></h2>
+        <div id="div1">
+            <h3>Using email address</h3>
+            <label><b>Enter your email id</b></label><br>
+            <input type="email" id="email" required placeholder="Enter your mail id to respond you back"><br>
+            <label><b>Enter Your Message</b></label><br>
+            <textarea name="msg" rows="6" cols="50" required placeholder="Enter your message here"></textarea><br>
+            <button onclick="submit()">Submit</button>
+        </div>
+
+        <div id="div1">
+            <h3>Using email id</h3><br>
+            nehabharti6966@gmail.com
+        </div>
+        <div id="div1">
+            <b>
+                <h3>Using Call</h3>
+                Number1:-+91 9234567890<br>
+                Number2:-+91 9234567890<br>
+                Number3:-+91 9234567890<br>
+                Number4:-+91 9234567890<br>
+            </b>
+        </div>
+        <script>
+            function submit() {
+                alert("Thankyou! We will Respond you soon");
+            }
+        </script>
+
+
+    </section>
+</body>
+
+</html>

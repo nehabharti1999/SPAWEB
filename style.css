@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(./image/img7.jpeg);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    background:grey;
+    display: flex;
+    justify-content: space-between;
+    padding:25px;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    }
+#navitem li{
+    list-style: none;
+    display: inline;
+    margin: 20px;
+        
+}
+
+a{
+    text-transform: capitalize;
+    color:white;
+    font-size: 20px;
+    text-decoration: none;
+}
+a:hover{
+    background-color: rgb(119, 141, 236);
+    color: black;
+    font-size: 1.5em;
+}
+a:active{
+    font-size: 2em;
+}
+h1{
+    color:green;
+    padding-top: 120px;
+    font-size:50px;
+}
+#id1{
+    text-align: left;
+    padding-left: 15px;
+    
+}
+#id3{
+    text-align: center;
+    padding-top: 45px;
+    margin-top: 45px;
+}
+
+p{
+    color:black;
+    text-align:left;
+    word-spacing: 5px;
+    padding-top: 75px;
+    font-size: 25px;
+}
+#id2{
+    padding-top: 20px;
+    margin: auto;
+}
+#contact{
+    width: 100%;
+    height: 100vh;
+    /* float: left; */
+    position: relative;
+}
+#div1{
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 45px;
+}
+form{
+    padding-top: 75px;
+    padding-left: 200px;
+}
+#form{
+    background-image: url(./image/img8.jpg);
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+#list1
+{
+    font-size: 45px;
+    padding:30px;
+    text-align: left;
+}
